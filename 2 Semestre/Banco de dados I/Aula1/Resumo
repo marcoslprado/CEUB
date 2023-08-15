@@ -1,0 +1,94 @@
+Dado: Um fato, alguma coisa sobre a qual uma inferência é baseada
+Informação: Dado interpretado como um valor, inferência realizada
+Banco de dados: Coleção de dados relacionados
+	Propriedades implícitas de um BD:
+	-Representa aspectos do mundo real
+	-Possui um grau de interação com eventos do mundo real
+	-Possui um público ativamente interessado em seu conteúdo
+
+	Aplicações de banco de dados:
+	-Bancárias: Saque e depósito
+	-Bibliotecas: Catálogo, usuários
+	-Indústria: vendas, produção, compras
+	-Recursos Humanos: funcionários, salários
+	-Supermercado: inventário, estoque
+
+Implementação da informática
+	Em geral, as empresas implementam gradativamente a automação de suas funções.
+Atividade finalística de uma empresa: o que a empresa exerce para gerar lucro/ Objetivo da empresa
+T.I (Auxilia a atividade finalística)
+
+Sistemas isolados -> Dados não compartilhados
+Problema: Redundância de dados
+	-Um mesmo dado ocorre múltiplas vezes em locais diferenciados em um sistema computacional.
+	-Inconsistência de dados.
+
+Como evitar redundâncias não controladas:
+	-Compartilhamento de dados
+	-Utilização de banco de dados
+
+Banco de dados - Conjunto de arquivos integrados que atendem a um conjunto de aplicações.
+	Consequencias
+	-Compartilhamento de dados tem reflexos na estrutura do software (Estrutura interna dos arquivos passa a ser mais complexa/ Devem atender às necessidades dos diferentes sistemas)
+	Solução - Usar sistema de gerência de banco de dados
+Sistema Gerenciador de Bando de dados (SGBD)
+	-Software que incorpora as funções de definição, recuperação e alteração de dados em um banco de dados
+	-Facilita a ciração e a manutenção de um BD
+		-Manutenção se torna mais simples
+	-Define banco de dados (especifica tipos, estruturas e restrições para os dados a serem armazenados)
+	-Constrói banco de dados (Implementa o armazenamento dos dados)
+	-Manipula banco de dados
+	-Gerencia o acesso concorrente por vários usuários - mantendo os dados válidos e consistentes
+		-Acessos concorrentes não controlados podem levar a inconsistências
+	-Proteção e segurança - Previne acessos não autorizados
+Como organizar um banco de dados
+
+Modelar
+	- Organização de uma forma que os dados possam se relacionar da melhor forma possível
+	- É preciso modelar um BD
+	-Passos na modelagem de dados
+		-Observar os elementos de um ambiente
+		-Elaborar conceitos sobre estes elementos
+		-Caracterizá-los
+		-Abstrair características
+		-...
+Modelos de dados - Conjunto de conceitos que descrevem a estrutura lógica e física de um banco de dados
+Objetivos de um modelo de dados (Características do produto - Exemplo da indústria -> código, preço e descrição)
+	-representar um ambiente observado
+	-Servir de instrumento para comunicação
+	-Favorecer o processo de verificação e validação
+	-Capturar aspectos de relacionamento entre os objetos observados
+	-Servir como referencial para a geração de estruturas de dados
+	-...
+Modelo conceitual (Informações formais)
+Modelo lógico (estrutura de dados -> vista pelo usuário)
+Modelo físico (estrutura interna de arquivos, tabelas, ...)
+Abstração -> Processo mental em que extraímos dos dados as propriedades que julgames essenciais para caracterzá-los em determinado contexto.
+	-É o ato de separar mentalmente um ou mais elementos de uma totalidade complexa
+Modelo conceitual
+	-Representa conceitos próximos a como a grande maioria dos usuários percebem os dados
+	-Capta e retrata a realiade de uma organização, processo, setor, etc
+	-Independente da abordagem do BD que será utilizado e do tipo de SGBD
+	-Registra Estrutura dos dados como podem aparecer no BD
+	-Não regista como estes dados estão armazenados a nível de SGBD
+	-Não se preocupa com o modo de operações de consultas e manutenção dos dados
+	-Foco é o entendimento e representação de uma realidade, contexto
+Modelo Entidade - Relacionamento
+	-Técnica mais difundida de modelagem conceitual é a abordadem entidade- relacionamento (ER)
+	-Modela o "mundo reaL" como uma coleção de entidades e relacionamentos
+		-Entidade: Coisa ou objeto no mundo real que é distinguível dos outros objetos
+	-Relacionamento - Associação entre entidades
+-Modelo conceitual é representado através de diagrama entidade-relacionamento(ER)
+Modelo lógico
+	-Tem seu início após a criação do modelo conceitual
+	-Representação da informação de acordo com os termos da tecnologia ultilizada
+	-Descreve as estruturas do BD no formato permitido pela abordagem da tecnologia
+Modelo físico
+	-Contém detalhes de armazenamento interno de informações
+	-Usados por profissionais que fazem sintonia de performance em BD
+	-Visão do construtor
+		-Descreve como os dados podem ser armazenados em um meio físico
+	-Detalhes que
+		-Não têm influência sobre a programação e aplicações no SGBD
+		-Influenciam a performance das aplicações
+	-SQL/DDL
