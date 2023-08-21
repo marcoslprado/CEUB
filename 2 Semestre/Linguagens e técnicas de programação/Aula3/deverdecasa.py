@@ -7,6 +7,6 @@ def potencia (a,b):
         result = result * a
         i+=1
     return (result)
-x = 3
-y = 4
+x = int(input("Digite a base: "))
+y = int(input("Digite o expoente: "))
 print(potencia(x,y))
