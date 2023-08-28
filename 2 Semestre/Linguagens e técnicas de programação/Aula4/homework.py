@@ -1,17 +1,17 @@
-#  Programa que soma os elementos de uma lista utilizando função recursiva #
-# Declaração de variáveis #
-list = [] 
+# Programa que soma os elementos de uma lista usando função recursiva #
+resultado = 0
+list = [2,0,1,5,7,8,6]
+i = 0
 
-def createList(): # Função que insere elementos na lista #
-    try: # Tratamento de erro #
-        x = float(input("Digite o número que você deseja inserir na lista: (Para parar de inserir digite 0) "))
-        if x == 0: # Quando o usuário digitar 0, encerra a função #
-            return
-        list.append(x) # Adiciona o número digitado à lista #
-        createList()
-    except:
-        print("Você deve digitar um número. Tente novamente")
-        createList()
+def soma(resultado, list, i):
+    if i > 6:
+        return resultado
+    else:
+        resultado += list[i]
+        i+=1
+        return soma(resultado, list, i)
 
-createList()
-print("O resultado da soma dos elementos da lista é: ", sum(list))
+print("A soma dos elementos da lista é igual a ", soma(resultado, list, i))
+
+
+    
