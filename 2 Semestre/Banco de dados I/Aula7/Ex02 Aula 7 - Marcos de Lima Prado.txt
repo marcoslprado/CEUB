@@ -1,0 +1,6 @@
+Aula 7 - Marcos de Lima Prado/RA: 22301150 -> Turma A
+ 2)
+EMPREGADO = [codigo (PK) serial, nome (NN) varchar(50) ]
+DEPENDENTE = [nr_sequencia (PK) int, nome (NN) varchar(50) ]
+DEPENDENTE = [nr_sequencia (PK) int, nome (NN) varchar(50), cod_emp (FK) serial ]
+	cod_emp referencia Empregado 

@@ -1,0 +1,13 @@
+Aula 7 - Marcos de Lima Prado/RA: 22301150 -> Turma A
+ 1)
+MEDICO = [codigo (PK) serial, nome (NN) varchar(50) ]
+PACIENTE = [codigo (PK)serial, nome (NN) varchar(50), telefone varchar(50) ]
+MEDICAMENTO = []
+CONSULTA = [data/hora (PK) date ]
+MEDICO = [codMed (PK) serial, nomeMed (NN) varchar(50), data/hora (FK) date, codPac (FK) serial, telPac varchar(50), nomepac (NN) varchar(50) ]
+	data/hora referencia Consulta
+	codPac referencia Paciente
+PRESCRICAO = [ID (PK) serial, data/hora (FK) date ]
+	data/hora referencia consulta
+
+
