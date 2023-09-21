@@ -1,0 +1,4 @@
+Bebê (codbebe (PK) (NN), nome, peso, altura, codmae (FK))
+Mãe (Codmae (PK) (NN), nome, cidade, bairro, CEP, rua, telefone, data de nascimento)
+Médico (CRM  (PK) (NN), nome, telefone, especialidade)
+Berçário (CRM (FK), codbebe (FK))

@@ -1,0 +1,2 @@
+DIRETOR (coddir (PK) (NN), nome)
+DEPARTAMENTO (coddep (PK) (NN), nome, coddir (FK)
