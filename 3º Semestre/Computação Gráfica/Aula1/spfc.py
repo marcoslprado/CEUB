@@ -1,0 +1,21 @@
+import turtle as tr
+
+tr.pensize(5)
+tr.forward(100)
+tr.right(90)
+tr.forward(45)
+tr.right(45)
+tr.forward(70)
+tr.right(90)
+tr.forward(70)
+tr.right(45)
+tr.forward(45)
+tr.right(180)
+tr.forward(22)
+tr.left(90)
+tr.forward(100)
+tr.left(180)
+tr.forward(50)
+tr.left(90)
+tr.forward(70)
+
