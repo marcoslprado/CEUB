@@ -1,0 +1,4 @@
+- No autorelacionamento, quase sempre a cardinalidade mímina é 0 dos dois lados.
+- A cardinalidade pertence sempre ao que está do lado oposto.
+- Quando há um relacionamento entre mais de 2 entidades, caso os dois não tenham cardinalidade mínima 1, esse relacionamento deve virar uma entidade associativa.
+- Exemplo de cardinalidade de relacionamento ternário (entre 3 entidades) com cardinalidade máxima n -> N:N:N
