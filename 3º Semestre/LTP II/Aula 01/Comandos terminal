@@ -1,0 +1,13 @@
+pwd -> ver a pasta em que estou no terminal
+git clone -> trazer repositorio pra maquina
+ls -> listagem de tudo que tem na pasta
+gedit& -> bloco de notas
+git status 
+go build "nome do arquivo" -> sempre fazer depois de programar em go e salvar o arquivo para gerar um executavel
+para executar o arquivo (nome do executavel aparece em verde) -> ./"nome do arquivo"
+git add "nome do arquivo"
+rm -rf "nome do arquivo" -> apagar o arquivo e esvaziar a lixeira
+git commit -m "nome do arquivo"
+git push -> Jogar para nuvem
+go build *.go -> Buildar todos os arquivos .go
+git add . -> Adicionar todos os arquivos
