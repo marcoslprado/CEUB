@@ -14,7 +14,7 @@ https://documenter.getpostman.com/view/35996822/2sA3XJk4nJ
     * Update Team
     * Delete Team
 
-### Obs:
+### P.S.:
 
 This repository has only one commit because the original used in development is in Gitlab:
 https://gitlab.com/ltp2-a-luiz-eduardo/ps-backend-marcos-prado
