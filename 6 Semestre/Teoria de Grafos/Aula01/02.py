@@ -1,13 +1,13 @@
 import networkx as nx
 import matplotlib.pyplot as plt
 
-# Criar um grafo vazio
+# Criar um grafo direcionado vazio
 DG = nx.DiGraph()
 
 # Adicionar vértices (nós)
 DG.add_nodes_from(["A", "B", "C", "D"])
 
-# Adicionar arestas (conexões)
+# Adicionar arestas direcionadas (conexões)
 DG.add_edges_from([("A", "B"), ("B", "C"), ("C", "A"), ("C", "D")])
 
 # Desenhar grafo
